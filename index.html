@@ -5,21 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAS - Programa Agiliza Saúde</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="imc-container">
-        <div class="imc-decor">
-            <img src="./img/comida.jpg" alt="">
-        </div>
-        <div class="imc-calculator">
-            <h1>Calculadora de IMC</h1>
-            <form class="imc-form">
-                <input type="text">
+    <main id="imc-container">
+        <picture id="imc-decor">
+            <img src="./assets/img/decoration.svg">
+        </picture>
+        <div id="imc-calculator">
+            <form id="imc-form">
+                <h1>Calculadora de IMC</h1>
+                <label for="weight">Peso em Kg:</label>
+                <div class="input-box">
+                    <span><img src="./assets/icons/weight-icon.svg"></span>
+                    <input type="number" name="weight" id="weight" placeholder="Ex: 72,5">
+                    <span>kg</span>
+                </div>
+                <label for="height">Altura em centímetros:</label>
+                <div class="input-box">
+                    <span><img src="./assets/icons/height-icon.svg"></span>
+                    <input type="number" name="height" id="height" placeholder="Ex: 165">
+                    <span>cm</span>
+                </div>
+                <button>Calcular</button>
             </form>
+            <div id="imc-result">
+                
+            </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
