@@ -1,0 +1,32 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #18181b;
+  color: #fff;
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+a {
+  align-self: center;
+  display: flex;
+  text-decoration: none;
+  gap: 1rem;
+  padding: 5px;
+  margin-top: 30px;
+  color: #00920f;
+}
