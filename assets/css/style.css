@@ -41,30 +41,35 @@ input {
   padding: 5px;
 }
 
-.ativo#imc-result {
+#imc-result {
   position: relative;
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-p.ativo#result-complement,
-p.ativo#result {
+p#result-complement,
+p#result {
   grid-column: 1;
   justify-self: center;
 }
 
-p.ativo#result {
+p#result {
   font-size: 2rem;
   font-weight: bold;
 }
 
-p.ativo#result-complement {
+p#result-complement {
+  display: none;
   font-size: 0.9rem;
   color: #c5c5c5;
 }
 
-p.ativo#result-describe {
+p.ativo#result-complement{
+  display: block;
+}
+
+p#result-describe {
   grid-column: 2;
   grid-row: 1;
   align-self: center;
