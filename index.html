@@ -22,25 +22,26 @@
                 <label for="weight">Peso em Kg:</label>
                 <div class="input-box">
                     <span><img src="./assets/icons/weight-icon.svg"></span>
-                    <input type="number" name="weight" id="weight" placeholder="Ex: 72,5">
+                    <input type="number" step="0.1" name="weight" id="weight" placeholder="Ex: 72,5">
                     <span>kg</span>
                 </div>
-                <label for="height">Altura em centímetros:</label>
+                <label for="height">Altura em metros:</label>
                 <div class="input-box">
                     <span><img src="./assets/icons/height-icon.svg"></span>
-                    <input type="number" name="height" id="height" placeholder="Ex: 165">
-                    <span>cm</span>
+                    <input type="number" step="0.01" name="height" id="height" placeholder="Ex: 1,70">
+                    <span>m</span>
                 </div>
                 <button>Calcular</button>
             </form>
             <div id="imc-result">
                 <p id="result"></p>
-                <p id="result-complement"></p>
+                <p id="result-complement">Seu IMC</p>
                 <p id="result-describe"></p>
             </div>
             <a href="https://www.tuasaude.com/imc/" rel="external" target="_blank">Mais informações sobre o IMC <span><img src="./assets/icons/external-link-icon.svg"></span></a>
         </div>
     </main>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
