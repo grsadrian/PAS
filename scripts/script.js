@@ -11,13 +11,17 @@ function calculateIMC(event) {
   resultImc.innerHTML = imc.toFixed(1);
   resultComplement.classList.add("ativo");
   if (imc >= 18.5 && imc <= 24.9) {
+    result.style.color = "#00920F";
     resultDescribe.innerText = "Parabéns ! Você está com um peso normal.";
   } else if (imc > 24.9 && imc <= 30) {
+    result.style.color = "#FFCE00";
     resultDescribe.innerText = "Cuidado ! Você está com sobrepeso.";
   } else if (imc > 30) {
+    result.style.color = "#E65359";
     resultDescribe.innerText =
       "Busque ajuda profissional. Você pode estar com um quadro de obesidade.";
   } else {
+    result.style.color = "#FFCE00";
     resultDescribe.innerText =
       "Atenção ! Você está com um peso abaixo do normal, indicando magreza.";
   }
