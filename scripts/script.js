@@ -1,4 +1,5 @@
 const form = document.querySelector("#imc-form");
+const resultImcContainer = document.querySelector("#imc-result");
 const resultImc = document.querySelector("#result");
 const resultComplement = document.querySelector("#result-complement");
 const resultDescribe = document.querySelector("#result-describe");
@@ -9,6 +10,7 @@ function calculateIMC(event) {
   const height = parseFloat(document.querySelector("#height").value);
   const imc = weight / height ** 2;
   resultImc.innerHTML = imc.toFixed(1);
+  resultImcContainer.classList.add("ativo");
   resultComplement.classList.add("ativo");
   if (imc >= 18.5 && imc <= 24.9) {
     result.style.color = "#00920F";
