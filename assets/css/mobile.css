@@ -1,6 +1,34 @@
 @media screen and (max-width: 960px) {
-  #imc-decor img {
+  #imc-decor,
+  img {
     display: none;
   }
 }
 
+@media screen and (max-width: 500px) {
+  #imc-container {
+    width: 100%;
+    height: 100%;
+    gap: 0px;
+  }
+
+  #imc-calculator {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    padding: 0px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  a {
+    font-size: 1.8ch;
+  }
+}
