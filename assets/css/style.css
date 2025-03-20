@@ -6,6 +6,8 @@
 #imc-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex: 1;
   gap: 3.5rem;
 }
 
